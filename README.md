@@ -1,8 +1,9 @@
-# OTC Derivatives Pricing Study Notes
+# OTC Derivatives Pricing
 
-This repository reorganizes the derivatives study materials into a GitHub-friendly layout focused on pricing notebooks and supporting source code.
+장외 파생상품 가격결정(pricing) 관련 스터디 자료를 GitHub 업로드용으로 정리한 저장소입니다.  
+주요 Jupyter Notebook과 보조 C++ 소스 코드를 보기 쉽도록 재구성했습니다.
 
-## Structure
+## 저장소 구성
 
 - `notebooks/`
   - `01_pricing_interest_rate.ipynb`
@@ -16,31 +17,25 @@ This repository reorganizes the derivatives study materials into a GitHub-friend
   - `09_credit_derivatives.ipynb`
   - `S&P500_option.xlsx`
 - `src/fdm/`
-  - finite-difference example source files
+  - 유한차분법(FDM) 관련 예제 소스 코드
 - `src/mcs/`
-  - Monte Carlo example source files and notes
+  - 몬테카를로 시뮬레이션 관련 예제 소스 코드와 메모
 
-## Topics
+## 다루는 주제
 
-- Pricing basics and interest-rate foundations
-- Monte Carlo simulation for derivatives pricing
-- Finite difference method for option pricing
-- Hedge trading and Greeks
-- American option pricing, LSMC, and convertible bonds
-- Volatility surface construction
-- Bootstrapping and interest-rate derivatives
-- Convertible bond pricing
-- Credit derivatives pricing
+- 파생상품 가격결정 기초와 이자율
+- 몬테카를로 시뮬레이션
+- 유한차분법을 이용한 옵션 가격결정
+- 헤지 트레이딩과 Greeks
+- 아메리칸 옵션, LSMC, 전환사채(Convertible Bond)
+- 변동성 곡면(Volatility Surface)
+- 부트스트래핑과 이자율 파생상품
+- 전환사채 가격결정
+- 신용파생상품 가격결정
 
-## Environment
+## 실행 환경
 
-Install the main Python packages with:
-
-```bash
-pip install -r requirements.txt
-```
-
-The notebooks mainly use:
+주요 패키지는 아래와 같습니다.
 
 - `numpy`
 - `pandas`
@@ -48,7 +43,13 @@ The notebooks mainly use:
 - `matplotlib`
 - `jupyter`
 
-## Notes
+필요 패키지는 다음 명령으로 설치할 수 있습니다.
 
-- The spreadsheet used by the volatility-surface notebook is included as `notebooks/S&P500_option.xlsx`.
-- Large course assets such as the original PDF, zip archives, notebook checkpoints, and compiled binaries were intentionally left out of this repo layout.
+```bash
+pip install -r requirements.txt
+```
+
+## 참고 사항
+
+- 변동성 곡면 노트북에서 사용하는 데이터 파일은 `notebooks/S&P500_option.xlsx`에 포함되어 있습니다.
+- 원본 PDF, zip 파일, notebook checkpoint, 실행 파일(`.exe`) 등은 GitHub 업로드 대상에서 제외했습니다.
