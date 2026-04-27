@@ -3,6 +3,13 @@
 장외 파생상품 가격결정(pricing) 관련 스터디 자료를 GitHub 업로드용으로 정리한 저장소입니다.  
 주요 Jupyter Notebook과 보조 C++ 소스 코드를 보기 쉽도록 재구성했습니다.
 
+## 이번 정리 내용
+
+- 노트북 파일명을 정리해 `notebooks/` 아래에 순서대로 배치했습니다.
+- FDM, MCS 관련 C++ 예제 코드는 `src/` 아래로 분리했습니다.
+- 변동성 곡면 노트북에서 사용하는 데이터 파일을 함께 포함했습니다.
+- 원본 강의 자료 중 GitHub 업로드에 불필요한 대용량 보조 파일은 제외했습니다.
+
 ## 저장소 구성
 
 - `notebooks/`
@@ -53,3 +60,4 @@ pip install -r requirements.txt
 
 - 변동성 곡면 노트북에서 사용하는 데이터 파일은 `notebooks/S&P500_option.xlsx`에 포함되어 있습니다.
 - 원본 PDF, zip 파일, notebook checkpoint, 실행 파일(`.exe`) 등은 GitHub 업로드 대상에서 제외했습니다.
+- 실습 흐름은 기초 pricing → Monte Carlo → FDM → 변동성 곡면 → IR/Credit derivatives 순서로 따라가면 자연스럽습니다.
